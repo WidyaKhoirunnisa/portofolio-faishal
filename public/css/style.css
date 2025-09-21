@@ -765,10 +765,6 @@ video {
   height: 100%;
 }
 
-.h-7 {
-  height: 1.75rem;
-}
-
 .w-10 {
   width: 2.5rem;
 }
@@ -795,10 +791,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-7 {
-  width: 1.75rem;
 }
 
 .max-w-2xl {
@@ -1832,20 +1824,12 @@ video {
     height: 2.5rem;
   }
 
-  .md\:h-12 {
-    height: 3rem;
-  }
-
   .md\:w-10 {
     width: 2.5rem;
   }
 
   .md\:w-auto {
     width: auto;
-  }
-
-  .md\:w-12 {
-    width: 3rem;
   }
 
   .md\:max-w-4xl {
