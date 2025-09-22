@@ -5,6 +5,9 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
+        futura: ['FuturaCyrillicBold', 'sans-serif'],
+        romana: ['Romana', 'serif'],
+        Fontspring: ['Fontspring-DEMO-lupio', 'sans-serif'],
         ubuntu: ['Ubuntu'],
         poppins: ['Poppins'],
         roboto: ['Roboto']

@@ -17,6 +17,16 @@
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
         <link rel="stylesheet" href="public/css/style.css">
+        <!-- 👇 TAMBAHKAN INI: definisi @font-face Romana -->
+  <link rel="stylesheet" href="/public/css/fonts.css">
+
+  <!-- 👇 (opsional) preload salah satu weight biar cepat muncul -->
+  <link rel="preload" href="/assets/fonts/Romana-Regular.otf" as="font" type="font/otf" crossorigin>
+  <link rel="preload" href="/assets/fonts/Fontspring-DEMO-lupio-medium.otf" as="font" type="font/otf" crossorigin>
+  <link rel="preload" href="/assets/fonts/FuturaCyrillicBold.ttf" as="font" type="font/ttf" crossorigin>
+
+  <!-- stylesheet utama tailwind/output kamu -->
+  <link rel="stylesheet" href="public/css/style.css">
         <style>
             .switch {
                 font-size: 10px;
@@ -126,8 +136,11 @@
                 transform: translateX(30px);
             }
 
-             #home, #about, #project, #contact, #footer {
-    background: #0067FF !important
+            /* LIGHT */
+    #home, #about, #project, #contact, #footer { background: #FFFFFF !important; }
+
+    /* DARK */
+    .dark #home, .dark #about, .dark #project, .dark #contact, .dark #footer { background: #0e45bf !important; }
         </style>
     </head>
 
@@ -141,9 +154,9 @@
                     class="backdrop-blur-md fixed top-0 left-0 right-0 z-50 flex flex-wrap items-center justify-between max-w-screen-xl p-4 mx-auto">
                     <a href="#home" class="flex items-center">
                         <span
-                            class="font-poppins whitespace-nowrap dark:text-cyan-300 text-2xl font-semibold text-blue-800">
+                            class="font-futura whitespace-nowrap dark:text-[#D6F953] text-2xl font-semibold text-[#214897]">
                             Faishal<span
-                                class="dark:bg-cyan-400 dark:text-gray-800 p-1 ml-1 text-gray-100 transition-colors duration-700 ease-in-out bg-blue-800 rounded-lg">Hakim</span>
+                                class="dark:bg-cyan-400 dark:text-[#D6F953] p-1 ml-1 text-[#FFFFFF] transition-colors duration-700 ease-in-out bg-[#214897] rounded-lg">Hakim</span>
                         </span>
                     </a>
                     <div class="md:order-2 flex items-center">
@@ -175,10 +188,10 @@
                             </svg>
                         </button>
                     </div>
-                    <div class="md:flex md:w-auto md:order-1 dark:text-white items-center justify-between hidden w-full text-gray-700"
+                    <div class="md:flex md:w-auto md:order-1 dark:text-white items-center justify-between hidden w-full text-[#214897]"
                         id="mobile-menu">
                         <ul
-                            class="md:p-0 md:flex-row md:space-x-8 md:mt-0 md:border-0 dark:border-gray-700 flex flex-col p-4 mt-4 font-medium border border-gray-100 rounded-lg">
+                            class="md:p-0 md:flex-row md:space-x-8 md:mt-0 md:border-0 dark:border-gray-700 flex flex-col p-4 mt-4 font-futura border border-gray-100 rounded-lg">
                             <li>
                                 <a href="#home"
                                     class="hover:text-blue-600 dark:hover:text-cyan-400 block py-2 pl-3 pr-4 transition-colors duration-500 ease-in-out rounded-sm"
@@ -212,10 +225,11 @@
                         <div class="lg:mb-0 lg:max-w-xl lg:pr-5">
                             <div class="md:max-w-4xl max-w-2xl mb-6">
                                 <h2
-                                    class="font-poppins bg-clip-text bg-gradient-to-r from-blue-600 to-gray-600 dark:from-cyan-500 dark:to-gray-200 lg:text-8xl sm:leading-none sm:text-6xl mb-6 text-4xl font-bold tracking-tight text-transparent transition-colors duration-1000 ease-in-out">
-                                    Personal Portfolio<br class="md:block hidden" /> by Faishal Hakim </h2>
+                                    class="font-romana lg:text-8xl sm:leading-none sm:text-6xl mb-6 text-4xl font-bold tracking-tight
+         text-[#214897] dark:text-[#D6F953] transition-colors duration-1000 ease-in-out">
+                                    Personal Portfolio<br class="md:block hidden" /> by Faishal Hakim ✦</h2>
                                 <p
-                                    class="dark:text-gray-200 md:text-lg font-roboto text-base font-medium text-gray-800">
+                                    class="dark:text-[#FFFFFF] md:text-lg font- text-base font-Fontspring-DEMO-lupio-medium text-[#214897]">
                                     Video Editor | Motion | VFX Compositor | Ex Digital Marketing as Video Editor & Videografer Intern at Metrodata Academy | Fresh Graduate Film and Television student at Indonesian Institute of the Arts Surakarta </p>
                             </div>
                             <div class="md:flex-nowrap flex flex-wrap items-center gap-2">
@@ -234,7 +248,7 @@
                                     </div>
                                     </div>
                                     <div id="object-tooltip"
-                                    class="dark:bg-cyan-200 hover:animate-pulse hover:ring-2 hover:ring-white dark:hover:ring-black p-2 bg-blue-500 rounded-full">
+                                    class="dark:bg-cyan-200 hover:animate-pulse hover:ring-2 hover:ring-white dark:hover:ring-black p-2 bg-[#214897] rounded-full">
                                     <!-- linkedin -->
                                     <a href="https://www.linkedin.com/in/faishalhakim" target="_blank">
                                         <svg class="md:w-10 md:h-10 fill-gray-100 dark:fill-gray-800 w-6 h-6"
@@ -261,7 +275,7 @@
                                             </div>
                                         </div>
                                         <div id="object-tooltip"
-                                            class="dark:bg-cyan-200 hover:animate-pulse hover:ring-2 hover:ring-white dark:hover:ring-black p-2 bg-blue-500 rounded-full">
+                                            class="dark:bg-cyan-200 hover:animate-pulse hover:ring-2 hover:ring-white dark:hover:ring-black p-2 bg-[#214897] rounded-full">
                                             <!-- instagram -->
                                             <a href="https://www.instagram.com/faisal_hakm/" ">
                                                 <?xml version="1.0" ?>
@@ -347,7 +361,7 @@
 
                                     <!-- Button (background TETAP) -->
                                     <div id="object-tooltip"
-                                        class="dark:bg-cyan-200 hover:animate-pulse hover:ring-2 hover:ring-white dark:hover:ring-black p-2 bg-blue-500 rounded-full">
+                                        class="dark:bg-cyan-200 hover:animate-pulse hover:ring-2 hover:ring-white dark:hover:ring-black p-2 bg-[#214897] rounded-full">
                                     <a href="https://wa.me/6289509793570"
                                         target="_blank" rel="noopener noreferrer" aria-label="Chat via WhatsApp">
                                         <!-- Pakai logo PNG kamu -->
@@ -373,7 +387,7 @@
 
                                 <!-- Tombol -->
                                 <div id="object-tooltip"
-                                    class="dark:bg-cyan-200 hover:animate-pulse hover:ring-2 hover:ring-white dark:hover:ring-black p-2 bg-blue-500 rounded-full">
+                                    class="dark:bg-cyan-200 hover:animate-pulse hover:ring-2 hover:ring-white dark:hover:ring-black p-2 bg-[#214897] rounded-full">
                                 <a
                                     href="mailto:faishalkim@gmail.com"
                                     aria-label="Kirim email">
@@ -390,8 +404,8 @@
                             <div class="md:mb-16 lg:mb-20 mt-6 mb-10">
 
                                 <a href="https://drive.google.com/file/d/102d4F674z_CEepRwELWaJmzVW8Xo-DUD/view?usp=sharing" target="_blank"
-                                    class="bg-gradient-to-r from-blue-500 to-gray-200 dark:from-cyan-500 dark:to-gray-800 dark:hover:from-cyan-400 dark:hover:to-gray-600 dark:text-gray-200 font-poppins hover:transition-colors hover:brightness-110 hover:animate-pulse inline-flex p-2 font-semibold tracking-normal text-gray-900 transition-all duration-1000 ease-in-out transform rounded-md shadow-lg">My
-                                    CV <svg class="dark:text-gray-100 w-4 h-4 mt-1 ml-2 text-gray-600"
+                                    class="bg-[#214897] dark:from-cyan-500 dark:to-gray-800 dark:hover:from-cyan-400 dark:hover:to-gray-600 dark:text-gray-200 font-poppins hover:transition-colors hover:brightness-110 hover:animate-pulse inline-flex p-2 font-futura tracking-normal text-[#FFFFFF] transition-all duration-1000 ease-in-out transform rounded-md shadow-lg">My
+                                    CV <svg class="dark:text-gray-100 w-4 h-4 mt-1 ml-2 text-[#FFFFFF]"
                                         aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
                                         viewBox="0 0 18 18">
                                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -400,12 +414,21 @@
                                     </svg></a>
                             </div>
                         </div>
-                        <div class="lg:w-1/2 w-full p-0">
-                            <img class="dark:hidden lg:-mt-40 object-cover" src="assets/img/DESAIN 1.png"
-                                alt="hero">
-                            <img class="dark:block lg:-mt-40 hidden object-cover"
-                                src="assets/img/DESAIN 1.png" alt="hero">
-                        </div>
+                        <div class="lg:w-1/2 w-full p-0 flex justify-center">
+  <!-- LIGHT -->
+  <img
+    src="assets/img/DESAIN 4.png"
+    alt="hero"
+    class="block dark:hidden object-contain max-w-full h-auto
+           transform lg:-translate-y-28" />
+  <!-- DARK -->
+  <img
+    src="assets/img/DESAIN 4.png"
+    alt="hero"
+    class="hidden dark:block object-contain max-w-full h-auto
+           transform lg:-translate-y-28" />
+</div>
+
                     </div>
                     <a href="#about" aria-label="Scroll down"
                         class="hover:text-cyan-200 hover:border-cyan-300 hover:animate-bounce hover:shadow hover:scale-110 flex items-center justify-center w-10 h-10 mx-auto text-gray-900 duration-300 transform border border-gray-100 rounded-full">
@@ -1454,12 +1477,23 @@ Mari terhubung! Saya selalu terbuka untuk peluang baru, kolaborasi, maupun disku
                             below.</p>
                     </div>
                     <div class="md:flex-nowrap flex flex-row flex-wrap">
-                        <div class="w-full">
-                            <img src="assets/img/DESAIN 2.png" data-aos="zoom-in" data-aos-duration="500"
-                                data-aos-delay="1000" alt="ilustrasi-kontak" class="dark:block hidden">
-                            <img src="assets/img/DESAIN 2.png" data-aos="zoom-in" data-aos-duration="500"
-                                data-aos-delay="1000" alt="ilustrasi-kontak" class="dark:hidden">
-                        </div>
+                        <div class="w-full relative">
+  <!-- Dark -->
+  <img
+    src="assets/img/DESAIN 5.jpg"
+    alt="ilustrasi-kontak"
+    class="hidden dark:block block mx-auto w-full max-w-md h-auto object-contain"
+    data-aos="zoom-in" data-aos-duration="500" data-aos-delay="1000"
+  />
+  <!-- Light -->
+  <img
+    src="assets/img/DESAIN 5.jpg"
+    alt="ilustrasi-kontak"
+    class="block dark:hidden mx-auto w-full max-w-md h-auto object-contain"
+    data-aos="zoom-in" data-aos-duration="500" data-aos-delay="1000"
+  />
+</div>
+
                         <div class="w-full">
                             <form action="" id="myForm" class="font-roboto space-y-8">
                                 <div data-aos="fade-right" data-aos-delay="500" data-aos-duration="500">

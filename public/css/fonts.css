@@ -1,0 +1,22 @@
+/* public/css/fonts.css */
+@font-face{
+  font-family: "Romana";
+  src: url("/assets/fonts/Romana Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face{
+  font-family: "Fontspring-DEMO-lupio";
+  src: url("/assets/fonts/Fontspring-DEMO-lupio-medium") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face{
+  font-family: "FuturaCyrillicBold";
+  src: url("/assets/fonts/FuturaCyrillicBold") format("trueType");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
