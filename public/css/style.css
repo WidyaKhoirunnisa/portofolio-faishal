@@ -980,11 +980,6 @@ video {
   background-color: rgb(33 72 151 / var(--tw-bg-opacity));
 }
 
-.bg-\[\#f4200f\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(244 32 15 / var(--tw-bg-opacity));
-}
-
 .bg-blue-300 {
   --tw-bg-opacity: 1;
   background-color: rgb(147 197 253 / var(--tw-bg-opacity));
@@ -1024,6 +1019,11 @@ video {
   background-color: transparent;
 }
 
+.bg-\[\#f4200f\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(244 32 15 / var(--tw-bg-opacity));
+}
+
 .bg-\[url\(\'\/assets\/img\/next\.svg\'\)\] {
   background-image: url('/assets/img/next.svg');
 }
@@ -1053,6 +1053,18 @@ video {
 .from-gray-50 {
   --tw-gradient-from: #f9fafb var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(249 250 251 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-\[\#f4200f\] {
+  --tw-gradient-from: #f4200f var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(244 32 15 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-\[\#214897\] {
+  --tw-gradient-from: #214897 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(33 72 151 / 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
@@ -1315,6 +1327,15 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-\[\#f4200f\] {
+  --tw-text-opacity: 1;
+  color: rgb(244 32 15 / var(--tw-text-opacity));
+}
+
+.text-\[\#\#f4200f\] {
+  color: ##f4200f;
 }
 
 .underline-offset-4 {
